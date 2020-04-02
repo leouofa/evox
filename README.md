@@ -2,6 +2,17 @@
 
 EvoX is a PDF songbook generator for the masses. Making it easy for anyone to create and maintain their very own songbook. 
 
+#### Why
+I wanted to create a songbook of the songs I like to play, but being a programmer it made a total sense to build a songbook builder first.
+
+#### Features
+- It makes a PDF Songbook (obviously).
+- Super sexy cover page, with logo support.
+- It features a super simple plain-text markup language making it easy for people to create & share songs.
+- Multiple column support.
+- Per song font setting and column size adjustments.
+- Table of content with page numbers.
+
 ## Installation
 Install evox with:
 
@@ -24,7 +35,7 @@ Next, generate the sample song book.
 
     $ evox generate
     
-This will create the book.pdf inside the __book__ folder.
+This will create the book.pdf inside the book folder.
 
 ### The Cover
 Inside the cover folder there are 2 files, the __config.yml__ and __logo.png__.
@@ -48,6 +59,42 @@ footer:
   title: 'Compiled by Leonid Medovyy'
   title_size: 25
 ```
+
+### The Songs
+The songs are just files with .evox extension that live inside the __songs__ directory, and are printed in alphabetical order when the songbook is generated.
+
+```yaml
+==
+name: Free Falling
+author: Tom Petty
+font: 9.0
+column_width: 610
+gutter: 5
+==
+
+--
+.        C    F     F     C     G
+ She's a good girl, loves her mama
+.     C    F     F     C    G
+ Loves Jesus and America too
+.        C    F     F        C   G
+ She's a good girl, crazy 'bout Elvis
+.      C    F         F    C    G
+ Loves horses and her boyfriend too
+--
+
+--
+.       C    F        F     C   G
+ It's a long day of livin' in Reseda
+.          C    F    F       C          G
+ There's a freeway runnin' through the yard
+.          C    F             F     C     G
+ And I'm a bad boy, 'cause I don't even miss her
+.      C   F         F    C        G
+ I'm a bad boy for breakin' her heart
+--
+```
+
 
 ## Contributing
 
