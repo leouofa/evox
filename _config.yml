@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+title: 'Evox'
+description: 'Rugged Songbook Generator'
+logo: 'lib/templates/logo.png'
