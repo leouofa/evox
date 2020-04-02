@@ -1,6 +1,6 @@
-# EvoX PDF Songbook Generator
+# EvoX Songbook Builder
 
-EvoX is a songbook generator for the masses. Making it easy for anyone to create and maintain their very own songbook. 
+EvoX is a PDF songbook generator for the masses. Making it easy for anyone to create and maintain their very own songbook. 
 
 ## Installation
 Install evox with:
