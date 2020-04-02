@@ -2,6 +2,7 @@ require "evox/version"
 require 'prawn'
 require 'commander/import'
 require 'yaml'
+require 'fileutils'
 
 
 module Evox
@@ -23,10 +24,24 @@ module Evox
       c.syntax = 'evox init'
       c.description = 'initializes the folder structure & copies default config files'
       c.action do |_args, _options|
-        puts '** initializing the folder structure **'
+        source_folder = File.expand_path("../templates", __FILE__)
+        dest_folder = FileUtils.pwd()
         Dir.mkdir('book')
+        Dir.mkdir('cover')
         Dir.mkdir('songs')
-        puts 'consider checking this folder in source control'
+        puts '✅ Initialized Folder Structure'
+
+        FileUtils.cp "#{source_folder}/config.yml", "#{dest_folder}/cover/config.yml"
+        FileUtils.cp "#{source_folder}/logo.png", "#{dest_folder}/cover/logo.png"
+        puts '✅ Copied Default Cover Files'
+
+        FileUtils.cp "#{source_folder}/free_falling.evox", "#{dest_folder}/songs/free_falling.evox"
+        FileUtils.cp "#{source_folder}/over_the_rainbow.evox", "#{dest_folder}/songs/over_the_rainbow.evox"
+        FileUtils.cp "#{source_folder}/i_dont_love.evox", "#{dest_folder}/songs/i_dont_love.evox"
+        puts '✅ Copied Sample Longs'
+
+        puts ''
+        puts '🚨 Consider checking this folder in source control 🚨'
       end
     end
 
