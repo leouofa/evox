@@ -1,10 +1,9 @@
 # EvoX
 
-EvoX is a songbook generator for the masses. Making it easy for anyone to create and maintain their very own songbook.
+EvoX is a songbook generator for the masses. Making it easy for anyone to create and maintain their very own songbook. 
 
 ## Installation
-
-Install it yourself with:
+Install evox with:
 
     $ gem install evox
 
@@ -21,16 +20,12 @@ Initialize the songbook
     
 This will create 3 directories __book__, __cover__, and __songs__.
 
+#### The Cover
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/evox.
+Bug reports and pull requests are welcome on GitHub at https://github.com/leouofa/evox.
 
 ## License
 
