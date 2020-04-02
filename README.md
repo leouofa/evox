@@ -18,10 +18,36 @@ Initialize the songbook
     
     $ evox init
     
-This will create 3 directories __book__, __cover__, and __songs__.
+This will create 3 different directories __book__, __cover__, and __songs__.
 
-#### The Cover
+Next, generate the sample song book.
 
+    $ evox generate
+    
+This will create the book.pdf inside the __book__ folder.
+
+### The Cover
+Inside the cover folder there are 2 files, the __config.yml__ and __logo.png__.
+The logo file is just an example you can replace with your own. 
+
+The __config.yml__ allows you to adjust the cover heading, subheading, logo-size, and footer text. You can also change the name of the logo file.
+
+```yaml
+header:
+  top_padding: 20
+  title: 'The Great Book of Songs'
+  title_size: 35
+  subtitle: 'Version 0.5'
+  subtitle_size: 15
+  bottom_padding: 50
+logo:
+  image: logo.png
+  width: 393.5
+  height: 457
+footer:
+  title: 'Compiled by Leonid Medovyy'
+  title_size: 25
+```
 
 ## Contributing
 
