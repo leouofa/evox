@@ -21,9 +21,12 @@ module Evox
 
     command :init do |c|
       c.syntax = 'evox init'
-      c.description = 'initializes the folder structure'
+      c.description = 'initializes the folder structure & copies default config files'
       c.action do |_args, _options|
-        puts 'initializing the folder structure'
+        puts '** initializing the folder structure **'
+        Dir.mkdir('book')
+        Dir.mkdir('songs')
+        puts 'consider checking this folder in source control'
       end
     end
 

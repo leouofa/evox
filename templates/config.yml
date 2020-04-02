@@ -1,0 +1,14 @@
+header:
+  top_padding: 20
+  title: 'The Great Book of Songs'
+  title_size: 35
+  subtitle: 'Version 0.5'
+  subtitle_size: 15
+  bottom_padding: 50
+logo:
+  image: logo.png
+  width: 393.5
+  height: 457
+footer:
+  title: 'Compiled by Leonid Medovyy'
+  title_size: 25
