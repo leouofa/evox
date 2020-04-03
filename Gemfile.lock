@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    evox (1.0.0)
+    evox (1.0.1)
       commander
       prawn
 
