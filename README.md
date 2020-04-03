@@ -63,6 +63,7 @@ footer:
 ### The Songs
 The songs are just files with .evox extension that live inside the __songs__ directory, and are printed in alphabetical order when the songbook is generated.
 
+The song settings are located in between the double equal signs. Font size, column gutter size and total column width can be adjusted.
 ```yaml
 ==
 name: Free Falling
@@ -71,7 +72,14 @@ font: 9.0
 column_width: 610
 gutter: 5
 ==
+```
 
+
+The columns are created by placing lyrics inside double dashes. 
+
+Lyrics themselves start with spaces, and chords start with a period. 
+This concept is inspired by [OpenSong](http://www.opensong.org/).
+```yaml
 --
 .        C    F     F     C     G
  She's a good girl, loves her mama
