@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "evox"
   spec.version       = Evox::VERSION
   spec.authors       = ["Leonid Medovyy"]
-  spec.email         = ["leonid@goodlogik.com"]
+  spec.email         = ["leonid@storypro.io"]
 
   spec.summary       = "A rugged songbook generator"
-  spec.homepage      = "https://github.com/leouofa/evox"
+  spec.homepage      = "https://github.com/realstorypro/evox"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
