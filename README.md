@@ -1,8 +1,8 @@
 # EvoX 
-EvoX is a PDF songbook generator for the masses. Making it easy for anyone to create and maintain their very own songbook. 
+EvoX is a PDF songbook generator for the masses that makes it easy for anyone to create and maintain their very own songbook. 
 
 #### Why
-I wanted to create a songbook of the songs I like to play, but being a programmer it made a total sense to build a songbook builder first.
+Music makes the world go round, and there's nothing better than a good jam session with friends. After creating several songbooks for jam sessions, we wanted to simplify the process and leverage programming to make it much simpler and easier.
 
 #### Features
 - It makes a PDF Songbook (obviously).
