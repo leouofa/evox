@@ -8,7 +8,7 @@ require 'fileutils'
 module Evox
   class Start
     program :name, 'Evox'
-    program :version, '1.0.2'
+    program :version, '1.0.3'
     program :description, 'Rugged Songbook generator'
     default_command :howto
 
@@ -50,7 +50,8 @@ module Evox
     command :generate do |c|
       c.syntax = 'evox generate [options]'
       c.description = 'generates the songbook'
-      c.action do |_args, _options|
+      c.option '--skip-cover', 'Skip the generation of the cover page'
+      c.action do |_args, options|
 
         Prawn::Document.generate('book/book.pdf', page_size: "A4", margin: [48, 30, 60, 30]) do
           def build_cover
@@ -202,7 +203,7 @@ module Evox
           })
           font "RobotoMono"
 
-          build_cover
+          build_cover unless options.skip_cover
           build_pages
 
         end
