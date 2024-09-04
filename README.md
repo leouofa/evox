@@ -36,6 +36,8 @@ Next, generate the sample song book.
     
 This will create the book.pdf inside the book folder.
 
+To generate the book with an empty page instead of cover add `--skip-cover` parameter to `evox generate`.
+
 ### The Cover
 Inside the cover folder there are 2 files, the __config.yml__ and __logo.png__.
 The logo file is just an example you can replace with your own. 
