@@ -8,7 +8,7 @@ require 'fileutils'
 module Evox
   class Start
     program :name, 'Evox'
-    program :version, '1.0.0'
+    program :version, '1.0.2'
     program :description, 'Rugged Songbook generator'
     default_command :howto
 
@@ -52,7 +52,7 @@ module Evox
       c.description = 'generates the songbook'
       c.action do |_args, _options|
 
-        Prawn::Document.generate('book/book.pdf', page_size: "A4") do
+        Prawn::Document.generate('book/book.pdf', page_size: "A4", margin: [48, 30, 60, 30]) do
           def build_cover
             cover = YAML.load(File.read('cover/config.yml'))
             # Generate Cover Page
