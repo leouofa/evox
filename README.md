@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.jpg" alt="EvoX Logo" width="500">
+</p>
+
 # EvoX 
 EvoX is a PDF songbook generator for the masses that makes it easy for anyone to create and maintain their very own songbook. 
 
